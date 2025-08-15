@@ -1,3 +1,5 @@
+<?php $name = "Nocturnal Devs"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,27 +8,19 @@
     <title>Landing Page PHP</title>
 </head>
 <body>
-    <?php
-        $user_name = "";
-        $user_email = "";
-        $user_message = "";
-
-        echo '<br><p style="font-size: 15px; text-align: right; padding-right: 50px;">
+    <br><p style="font-size: 15px; text-align: right; padding-right: 50px;">
             Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             My Works&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Contact Me
-        </p>';
+        </p> 
+    <h1 style="text-align: center;"><?php echo $name; ?></h1>
 
-        echo '<br><h1 style="text-align: center;">Nocturnal Devs</h1>';
-
+    <?php
         echo '<p style="text-align: center; font-size: 14px; color: gray;">' . date("l, F j, Y") . '</p>';
 
-        echo "<br>";
-        echo '<p style="font-size: 24px; text-align: center;">Hi! We are the Nocturnal Devs!<br><br></p>';
-
-        echo '
+        echo '<br>
         <div id="contact" style="max-width:900px; margin:auto; padding:20px;">
             <div class="container">
                 <div class="row" style="display:flex; flex-wrap:wrap; gap:20px;">
